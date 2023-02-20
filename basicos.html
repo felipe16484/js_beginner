@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        
+       
+        // Tipos de Varibales
+
+            // Tener en cuenta los términos scope/alcance, hoisting...
+
+        var hola = 'Hola mundo';
+        let hello = 'Hello world';
+
+        console.log(hola);
+        console.log(hello);
+
+        /** 
+        * *  El objeto window representa el objeto que mapea toda la ventana del navegador para JavaScript 
+        * * Al momento de ejecutar este console, podemos ver que en una propiedad del objeto window, se puede
+        * apreciar que existe */
+        console.log(window);
+
+        /* las constantes no se pueden redeclarar ni se pueden declarar y asignar en distintas partes del código */
+        const PI = 3.1416;
+        console.log(PI);
+
+        const obj = {
+            nombre:'Felipe',
+            edad:25
+        }
+        const colores = ['negro','blanco','rojo','azul']
+
+        console.log(obj);
+        console.log(colores);
+
+        obj.apellido = 'Castañeda'; // Para agregar una propiedad nueva a un objeto previamente creado se realiza de esta manera
+        colores.push('café'); // Para agregarle un valor nuevo a un array se realiza con el método "push()"
+
+        console.log(obj);
+        console.log(colores);
+
+        /**
+        * * Tener en cuenta que la 'modificación' de objetos y arrays definidos como constantes es posible porque al momento de que 
+        * * se realiza no se modifica directamente el mismo, sino que se accede/modifca una referencia del valor adentro de ellos 
+        */
+
+    </script>
+
+</body>
+</html>
