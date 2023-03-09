@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    
+    <script>
+
+        // Declaración de variables de tipo numéricas:
+
+        let a = 2;
+        let b = new Number(6)
+        let c = 7.19;
+        let d = '5.6';
+
+        console.log(`Número definido directo: ${a}    -    Número definido como objeto: ${b}`);
+
+        // Diferentes métodos básicos
+
+        console.log(`Definiendo cantidad de decimales: ${c.toFixed(5)}`);
+        console.log(`Formateando a entero: ${parseInt(c)}`);
+        console.log(`Formateando a flotante/con decimales: ${parseFloat(c)}`);
+        console.log(`Muestreo antes de realizar la conversión a numeric: `,typeof c, typeof d);
+        console.log(`Si se suma un dato numérico con un string, se concatena: `,typeof c, typeof d);
+        console.log(`Suma con conversión de string a numeric: ${a+parseInt(d)}`);
+        // Hay que definir con exactitud el tipo de conversiones que estemos realizando puesto que debemos ser lo más explícitos posibles en caso tal
+        // de que estemos convirtiendo un número que tenga decimal con su respectivo parseo.
+
+        // Tip:   los métodos que no se utilizan con la siguiente sintaxis  .method_name() sino que directamente se aplica la variable o el dato
+        // en el parámetro del mismo, como puede ser el caso del parseInt(variable), es porque esos métodos salen principalmente del constructor del objeto
+        // con el que se está definiendo una variable. Sería lo mismo decir Number.parseInt(variable).
+
+        
+
+    </script>
+</body>
+</html>

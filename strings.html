@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    
+        
     <script>
         let nombre1 = "Felipe";
         let apellido1 = 'Castañeda';
@@ -21,7 +21,28 @@
         let apellido2 = 'Castañeda';
         let saludo2 = 'Hola mi nombre es ' + nombre2 + ' ' + apellido2 + '.';
 
-        console.log(saludo2);
+        console.log('Concatenación: ',saludo2);
+
+        // * Interpolación
+
+        let saludo3 = `Hola mi nombre es ${nombre2} ${apellido2}`;
+
+        console.log('Interpolación: ',saludo3);
+    
+            //* Interpolación aplicada a guardar elementos HTML dentro de variables
+
+        let ul = `
+            <ul>
+                <li>Invierno</li>
+                <li>Primavera</li>
+                <li>Otoño</li>
+                <li>Verano</li>
+            </ul>
+        `;
+
+        console.log('Interpolación para con código HTML: ',ul);
+        
+    
     </script>
 </body>
 </html>

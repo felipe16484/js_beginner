@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    
+    <script>
+
+// Función Declarada
+
+        function estoEsUnaFuncion() {
+            console.log('Uno');
+            console.log('Dos');
+            console.log('Tres');
+            console.log('Cuatro');
+        }
+
+        // Invocación de Función
+          // estoEsUnaFuncion();
+
+        // Función con Return
+        function funcionQueDevuelveValor() {
+            console.log('Uno');
+            console.log('Dos');
+            return "La función ha retornado una cadena de texto.";
+        }
+
+        console.log(`Return directo de la función en console.log: ${funcionQueDevuelveValor()}`);
+        
+        // Asignación de el return de una función a una variable
+        let return_function = funcionQueDevuelveValor();
+        console.log(`Return de variable contenedora de: ${return_function}`);
+        
+        // Función con Parámetros
+        function saludar(nombre,edad){
+            console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`)
+        }
+
+        // Su ejecución debe recibir los parámetros dentro del paréntesis de la invocación
+        saludar('Felipe Castañeda',25);
+        console.log(`Función con parámetros vacíos: ${saludar()}`);
+    
+    // Gran Característica
+
+        console.log(funcionDeclarada('Return de la función declarada ANTES de la definición de la misma.'));
+
+        function funcionDeclarada(texto){
+            return texto;
+        }
+
+        console.log(funcionDeclarada('Return de la función declarada DESPUÉS de la definición de la misma.'));
+
+// Función Expresada
+
+        // En este caso arroja error por lo que una función expresada no puede ser ejecutada antes de su definición.
+        // console.log(funcionExpresada('Return de la función expresada ANTES de la definición de la misma.'));
+
+        const funcionExpresada = function (texto) {
+            return texto;
+        }
+
+        console.log(funcionExpresada('Return de la función expresada DESPUÉS de la definición de la misma.'));
+
+    </script>
+</body>
+</html>
