@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+// Objetos
+
+        const felipe = {
+            nombre:'Felipe',
+            apellido: 'Castañeda',
+            edad: 25,
+            pasatiempos: ['Programar','Estudiar','Jugar'],
+            estado_civil: 'Unión Libre',
+            contacto:{
+                email: 'felipe.work018@gmail.com',
+                telefono: 321321654654,
+            },
+            saludar: function () {
+                console.log('Hola :)')
+            }
+        }
+
+        console.log(`Accediendo a propiedades con corchetes ${felipe["apellido"]}`);
+        console.log(`Accediendo a propiedades con '.' ${felipe.apellido}`);
+    </script>
+</body>
+</html>

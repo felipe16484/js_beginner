@@ -18,7 +18,25 @@
 
         // Arreglos dentro de Arreglos
         const arr2 = [1,2,['a','b','c']];
-        console.log(arr2[2][2]);
+        console.log(`Log de una posición de un array que se encuentra dentro de otro array: '${arr2[2][2]}'`);
+
+        // Arreglo generado con método constructor
+        const arr3 = Array.of('x','2',2,6,7,['3',4,5]);
+        console.log(`Log de una posición de un array que se encuentra dentro de un array generado con método constructor: '${arr3[5][0]}'`)
+
+        // Llenar un arreglo, indicándole la cantidad de posiciones y el valor con el que quedarán por defecto
+        const arr4 = Array(100).fill('Felipe');
+        console.log(`Posiciones llenada por defecto con un valor seteado: ${arr4}`)
+
+        // Se puede aplicar una función o una lógica a cada uno de los elementos de un array con un .forEach
+        console.log(`Array alterado con una función en cada una de las posiciones:`);        
+        arr4.forEach( (key,index) => {
+            if(index%2==0){
+                key='Castañeda';
+            }
+            console.log(`<li id='${index}'>${key}</li>`)
+        })
+
     </script>
 </body>
 </html>
