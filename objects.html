@@ -23,11 +23,21 @@
             },
             saludar: function () {
                 console.log('Hola :)')
+            },
+            decirMiNombre: function () {
+                console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años.`)
             }
         }
 
-        console.log(`Accediendo a propiedades con corchetes ${felipe["apellido"]}`);
-        console.log(`Accediendo a propiedades con '.' ${felipe.apellido}`);
+        console.log(`Accediendo a propiedades con corchetes ${felipe["nombre"]}`);
+        console.log(`Accediendo a propiedades con '.': ${felipe.apellido}, ${felipe.edad}`);
+        console.log(`Accediendo a una propiedad que es un array: ${felipe.pasatiempos[1]}`);
+        console.log(`Accediendo a una propiedad de un objeto dentro de un objeto: ${felipe.contacto.email}`);
+        console.log(`Accediendo a propiedad que es un a función: `);
+        felipe.saludar();
+        console.log(`Uso del 'this.': `);
+        felipe.decirMiNombre();
+
     </script>
 </body>
 </html>
